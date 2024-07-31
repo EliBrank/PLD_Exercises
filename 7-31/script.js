@@ -11,8 +11,10 @@ function search () {
       let template = `
         <div class='movie'>
           <img class='lightbulb-effect' src='${imgUrl}'>
-          <h3>${film.original_title}</h3>
-          <p class='description'>${film.overview}</p>
+          <div class='film-info'>
+            <h2>${film.original_title}</h2>
+            <p class='description'>${film.overview}</p>
+          </div>
         </div>
 `;
       $('#content').append(template);
